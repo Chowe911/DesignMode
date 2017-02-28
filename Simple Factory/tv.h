@@ -14,7 +14,7 @@ class HisenseTV : public TV
 public:
     void play()
 	{
-		cout<<"���ŵ��ӻ�������......"<<endl;
+		cout<<"海信电视机播放中......"<<endl;
 	}	
 };
 
@@ -23,7 +23,7 @@ class HaierTV : public TV
 public:
     void play()
 	{
-		cout<<"�������ӻ�������......"<<endl;
+		cout<<"海尔电视机播放中......"<<endl;
 	}
 };
 
@@ -35,17 +35,17 @@ public:
         TV *tv;
 		if(brand=="Haier")
 		{
-			cout<<"���ӻ����������������ӻ���"<<endl;
+			cout<<"电视机工厂生产海尔电视机！"<<endl;
 			return new HaierTV();
 		}
 		else if(brand=="Hisense")
 		{
-			cout<<"���ӻ������������ŵ��ӻ���"<<endl;
+			cout<<"电视机工厂生产海信电视机！"<<endl;
 			return new HisenseTV();
 		}
 		else
 		{
-			cout<<"�Բ������ݲ���������Ʒ�Ƶ��ӻ���"<<endl;
+			cout<<"对不起，暂不能生产该品牌电视机！"<<endl;
 		}
 	}
 };
