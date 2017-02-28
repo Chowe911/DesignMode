@@ -1,4 +1,4 @@
-//74-27-ea-3e-5d-87
+
 #include<string>
 #include<iostream>
 using namespace std;
@@ -14,7 +14,7 @@ class HisenseTV : public TV
 public:
     void play()
 	{
-		cout<<"º£ÐÅµçÊÓ»ú²¥·ÅÖÐ......"<<endl;
+		cout<<"ï¿½ï¿½ï¿½Åµï¿½ï¿½Ó»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½......"<<endl;
 	}	
 };
 
@@ -23,7 +23,7 @@ class HaierTV : public TV
 public:
     void play()
 	{
-		cout<<"º£¶ûµçÊÓ»ú²¥·ÅÖÐ......"<<endl;
+		cout<<"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½......"<<endl;
 	}
 };
 
@@ -35,17 +35,17 @@ public:
         TV *tv;
 		if(brand=="Haier")
 		{
-			cout<<"µçÊÓ»ú¹¤³§Éú²úº£¶ûµçÊÓ»ú£¡"<<endl;
+			cout<<"ï¿½ï¿½ï¿½Ó»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó»ï¿½ï¿½ï¿½"<<endl;
 			return new HaierTV();
 		}
 		else if(brand=="Hisense")
 		{
-			cout<<"µçÊÓ»ú¹¤³§Éú²úº£ÐÅµçÊÓ»ú£¡"<<endl;
+			cout<<"ï¿½ï¿½ï¿½Ó»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Åµï¿½ï¿½Ó»ï¿½ï¿½ï¿½"<<endl;
 			return new HisenseTV();
 		}
 		else
 		{
-			cout<<"¶Ô²»Æð£¬ÔÝ²»ÄÜÉú²ú¸ÃÆ·ÅÆµçÊÓ»ú£¡"<<endl;
+			cout<<"ï¿½Ô²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ·ï¿½Æµï¿½ï¿½Ó»ï¿½ï¿½ï¿½"<<endl;
 		}
 	}
 };
